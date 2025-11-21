@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags provide information about the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio website">
+    
+    <!-- Title appears in the browser tab -->
+    <title>My Portfolio | Your Name</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- p5.js library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+</head>
+<body>
+    <!-- Header: Contains site navigation and branding -->
+    <header>
+        <nav>
+            <h1>Your Name</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sketch">Sketch</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main: Contains the primary content of the page -->
+    <main>
+        <!-- Hero Section: Eye-catching intro -->
+        <section id="hero">
+            <h2>Hi, I'm [Your Name]</h2>
+            <p>A creative coder exploring p5.js</p>
+        </section>
+
+        <!-- About Section: Information about you -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Write a short bio here. What are you learning? 
+                What kind of creative coding interests you?
+            </p>
+        </section>
+
+        <!-- Sketch Section: Main p5.js sketch -->
+        <section id="sketch">
+            <h2>My Sketch</h2>
+            <p>Interactive sketch - move your mouse to draw!</p>
+            <!-- Container for p5 canvas -->
+            <div id="sketch-container"></div>
+        </section>
+
+        <!-- Contact Section: How to reach you -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Copyright and additional info -->
+    <footer>
+        <p>&copy; 2025 Your Name. Made with ❤️ at Parsons.</p>
+    </footer>
+
+    <!-- p5.js sketch code -->
+    <script>
+        // Setup function runs once when the page loads
+        function setup() {
+            // Create a canvas and place it in the sketch-container div
+            let canvas = createCanvas(400, 400);
+            canvas.parent('sketch-container');
+            background(220);
+        }
+
+        // Draw function runs continuously (60 times per second)
+        function draw() {
+            // Fill color changes with mouse position
+            fill(mouseX, mouseY, 200);
+            // Draw a circle that follows the mouse
+            circle(mouseX, mouseY, 50);
+        }
+    </script>
+</body>
+</html>

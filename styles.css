@@ -1,0 +1,113 @@
+/* ===================================
+   SIMPLE p5.js PORTFOLIO TEMPLATE
+   Focus: Clean layout for creative coding projects
+   =================================== */
+
+/* Basic reset - remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Simple, readable body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+    border-bottom: 2px solid #333;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+nav h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Basic link styling */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Hero section */
+#hero {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* p5.js sketch container - the star of the show! */
+#sketch-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+#sketch-container canvas {
+    display: block;
+}
+
+/* Contact section */
+.contact-links {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-links a {
+    padding: 10px 20px;
+    border: 1px solid #333;
+}
+
+.contact-links a:hover {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9em;
+}
