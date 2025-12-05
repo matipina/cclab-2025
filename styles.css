@@ -13,10 +13,14 @@ body {
     background: #fff;
 }
 
-main {
-    max-width: 600px;
+nav, main {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding: 20px;
+}
+
+main {
+    padding-top: 60px;
 }
 
 h1 {
@@ -24,6 +28,20 @@ h1 {
     font-weight: normal;
     color: #E82E21;
     margin-bottom: 20px;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 2px solid #E82E21;
+}
+
+a:hover {
+    color: #E82E21;
+}
+
+nav a {
+    margin-right: 15px;
 }
 
 #about {
@@ -39,35 +57,9 @@ h1 {
     margin-bottom: 12px;
 }
 
-#projects a {
-    color: #222;
-    text-decoration: none;
-    border-bottom: 2px solid #E82E21;
-}
-
-#projects a:hover {
-    color: #E82E21;
-}
-
 #contact {
     margin-top: 60px;
     color: #777;
-}
-
-#contact a {
-    color: #E82E21;
-    text-decoration: none;
-}
-
-/* Project Pages */
-
-.back-link a {
-    color: #999;
-    text-decoration: none;
-}
-
-.back-link a:hover {
-    color: #E82E21;
 }
 
 .description {
